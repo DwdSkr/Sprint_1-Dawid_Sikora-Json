@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<section id="search-section">
+			<p>Filtry:</p>
+			<input type="text" id="name-search" placeholder="Wyszukaj po nazwie..." />
+			<input type="radio"id="alive" name="status" value="Alive" checked />
+			<label for="alive">Żywy</label>
+			<input type="radio"id="dead" name="status" value="Dead" />
+			<label for="dead">Martwy</label>
+			<input type="radio"id="unknown" name="status" value="unknown" />
+			<label for="unknown">Nieznane</label>
+		</section>
+		<section id="characters"></section>
+		<section id="pagination-section">
+			<button id="back-page"><img src="./icons/arrow-left-solid.svg" alt="left arrow"></button>
+			<button id="forward-page" ><img src="./icons/arrow-right-solid.svg" alt="right arrow"></button>
+		</section>
+		<section id="form-section">
+			<div id="form">
+				<h2>Swtórz postać</h2>
+				<form >
+					<input
+						name="name"
+						type="text"
+						placeholder="Nazwa postaci"
+					/><br />
+					<select name="status">
+						<option value="Alive">Żywy</option>
+						<option value="Dead">Martwy</option>
+						<option value="unknown">Nieznane</option></select
+					><br />
+					<input
+						name="species"
+						type="text"
+						placeholder="Rasa"
+					/><br />
+					<button type="submit"">Prześlij</button>
+				</form>
+			</div>
+		</section>
+		<script type="module" src="./index.js"></script>
+	</body>
+</html>

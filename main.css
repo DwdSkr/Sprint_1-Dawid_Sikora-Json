@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f3f3f3;
+}
+section {
+	display: flex;
+	margin-top: 30px;
+}
+input {
+	margin: 0px 5px 0px 20px;
+}
+button {
+	width: 60px;
+	height: 40px;
+	background-color: royalblue;
+}
+#name-search {
+	margin: 0;
+}
+#characters {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 20px;
+	max-width: 1400px;
+}
+#pagination-section button {
+	margin: 20px;
+}
+#form {
+	background-color: #f3f3f3;
+	border: 2px solid gray;
+	width: 600px;
+	height: 300px;
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: white;
+}
+h2 {
+	margin-top: 20px;
+}
+form {
+	margin-top: 40px;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+form input,
+form select,
+form button {
+	width: 80%;
+	height: 30px;
+	margin: 0;
+}
+
+button img {
+	width: 60%;
+	height: auto;
+}
+
+.character-background {
+	width: 250px;
+	height: auto;
+	border: 3px solid gray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background-color: white;
+}
+.inner-img {
+	width: 80%;
+	margin-top: 10px;
+}
+.inner-img img {
+	width: 100%;
+	height: auto;
+}
+.info {
+	width: 80%;
+	margin-bottom: 10px;
+}
+.delete-button {
+	width: 60%;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	color: white;
+}
+button:hover {
+	background-color: yellow;
+	color: black;
+}
