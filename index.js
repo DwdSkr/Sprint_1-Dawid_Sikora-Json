@@ -108,6 +108,7 @@ function changeStatus() {
 	const index = radioArray.findIndex((element) => element.checked === true);
 	status = radioArray[index].defaultValue;
 	page = 1;
+	name = '';
 	loadCharacters();
 }
 
